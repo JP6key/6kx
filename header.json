@@ -1,5 +1,5 @@
 {
-"name" : "ここに難易度表の名前",
-"symbol" : "ここにシンボル",
-"data_url" : "ここにJSONのURL"
+"name" : "フサフサ難易度表",
+"symbol" : "FS",
+"data_url" : "https://script.google.com/macros/s/AKfycby2atkyTgUM351gZDB9EwbLEOL_AY47ePaRyv4Ng_PNBSy1bS60q4QoXZB_AQQjuVPZsA/exec"
 }

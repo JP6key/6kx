@@ -73,8 +73,15 @@
 
                     var str = $("<tr></tr>");
 
-                    // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+// Level
+if (info[i].md5 != "" && info[i].md5 != null) {
+                        $("<td width='5%'>" +
+                            "<a href='https://ez2pattern.kr/bms/chart?md5=" + info[i]
+                            .md5 + "' target='_blank'>" + info[i].mark + x + "</a></td>").appendTo(str);
+                    }
+else{
+                        $("<td width='5%'>" + info[i].mark + x + "</td>").appendTo(str);
+                    }
 
                     // Title
                     if (info[i].md5 != "" && info[i].md5 != null) {

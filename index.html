@@ -73,6 +73,28 @@
 
                     var str = $("<tr></tr>");
 
+                    var str = $("<tr class='tr_normal'></tr>");
+
+        if(info[i].state == 1) {
+        str = $("<tr class='state1'></tr>");
+        }
+        if(info[i].state == 2) {
+        str = $("<tr class='state2'></tr>");
+        }
+        if(info[i].state == 3) {
+        str = $("<tr class='state3'></tr>");
+        }
+        if(info[i].state == 4) {
+        str = $("<tr class='state4'></tr>");
+        }
+        if(info[i].state == 5) {
+        str = $("<tr class='state5'></tr>");
+        }
+        if(info[i].state == 6) {
+        str = $("<tr class='state6'></tr>");
+
+        }
+
 // Level
 if (info[i].md5 != "" && info[i].md5 != null) {
                         $("<td width='5%'>" +

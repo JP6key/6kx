@@ -92,12 +92,26 @@
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
-                    // Artist
-                    $("<td width='25%'>" + info[i].artist + "</td>").appendTo(str);
+                    // Artist, url
+                    if (info[i].url != "" && info[i].url != null) {
+                        $("<td width='25%'>" +
+                            "<a href='" + info[i].url +
+                            "' target='_blank'>" + info[i].artist + "</a></td>").appendTo(str);
+                    }
+                    else{
+                        $("<td width='25%'>" + info[i].artist + "</td>").appendTo(str);
+                    }
                     
-                    // Charter
-                    $("<td width='25%'>" + info[i].name_diff + "</td>").appendTo(str);
-
+                    //sabun
+                    if (info[i].url_diff != "" && info[i].url_diff != null) {
+                        $("<td width='25%'>" +
+                            "<a href='" + info[i].url_diff +
+                            "' target='_blank'>" + info[i].name_diff + "</a></td>").appendTo(str);
+                    }
+                    else{
+                        $("<td width='25%'>" + info[i].name_diff + "</td>").appendTo(str);
+                    }
+                    
                     // 譜面画像
                     $("<td width='10%'>" +
                         "<a href='https://bms-score-viewer.pages.dev/view?md5=" + info[
